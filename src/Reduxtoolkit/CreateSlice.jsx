@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Async Thunk for fetching products
 export const getProduct = createAsyncThunk("cart/getProduct", async () => {
-  const response = await axios.get("https://dummyjson.com/products?limit=100");
+  const response = await axios.get("https://dummyjson.com/products?limit=28");
   return response.data.products;
 });
 
